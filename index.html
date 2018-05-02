@@ -2,12 +2,24 @@
 
 <html>
   <head>
+    <style>
+      table, th, td {
+      border: 1px solid black;
+      }
+
+      td, th{
+      width: 50%;
+      max-width: 50%;
+      padding: 1rem;
+      }
+
+    </style>
 
   </head>
   <body>
     <h1>US Population Data from 2010</h1>
 
-    <table style="border:1px solid black;">
+    <table style="border:1px solid black; width:100%;">
       <tr>
         <td>Total Population</td>
         <td id="total_pop"></td>
@@ -17,11 +29,11 @@
         <td id="avg_age"></td>
       </tr>
       <tr>
-        <td>Number of Ages where Number of Males is Greater than Females</td>
+        <td>Ages where Number of Males is Greater than Females</td>
         <td id="males_greater"></td>
       </tr>
       <tr>
-        <td>Number of Ages where Number of Females is Greater than Males</td>
+        <td>Ages where Number of Females is Greater than Males</td>
         <td id="females_greater"></td>
       </tr>
     </table>
